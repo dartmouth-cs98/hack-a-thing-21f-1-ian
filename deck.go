@@ -61,7 +61,7 @@ func newDeckFromFile(filename string) deck {
 	bs, err := ioutil.ReadFile(filename)
 	if err != nil {
 		// Option #1 - log the error and return a call to newDeck()
-		// Option #2 - lof the error and entirely quit the program
+		// Option #2 - log the error and entirely quit the program
 		fmt.Println("Error:", err)
 		os.Exit(1)
 	}
